@@ -43,6 +43,12 @@ class Markdown extends Parser
 	 */
 	public $html5 = false;
 
+        /**
+	 * @var integer the level where h* starts.
+	 * For instance, if set to 2, then # will render to <h2>, ## to <h3>.
+	 */
+	public $baseHeadLevel = 1;
+
 	/**
 	 * @var array these are "escapeable" characters. When using one of these prefixed with a
 	 * backslash, the character will be outputted without the backslash and is not interpreted

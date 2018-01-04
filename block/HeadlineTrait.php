@@ -61,7 +61,10 @@ trait HeadlineTrait
 	 */
 	protected function renderHeadline($block)
 	{
-		$tag = 'h' . $block['level'];
+                $level = $block['level'] + $this->baseHeadLevel-1;
+                if ($level < 1)
+                    $level = 1;
+		$tag = 'h' . $level;
 		return "<$tag>" . $this->renderAbsy($block['content']) . "</$tag>\n";
 	}
 

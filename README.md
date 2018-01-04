@@ -114,6 +114,7 @@ For all Markdown Flavors:
 
 - `$parser->html5 = true` to enable HTML5 output instead of HTML4.
 - `$parser->keepListStartNumber = true` to enable keeping the numbers of ordered lists as specified in the markdown.
+- `$parser->baseHeadLevel = 2` to set the starting level of the headings, in this case, #head will render to h2.
   The default behavior is to always start from 1 and increment by one regardless of the number in markdown.
 
 For GithubMarkdown:
